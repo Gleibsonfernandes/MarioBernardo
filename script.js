@@ -33,7 +33,7 @@ const loop = setInterval(() =>{
 
         mario.style.animation ="none";
         mario.style.bottom = `${mario_position}px`;
-        mario_img.setAttribute('src', '../img/mario_gameOver.png')
+        mario_img.setAttribute('src', 'mario_gameOver.png')
         mario_img.style.width ='50px';
         progresso.innerText=`${ ''}`;
     }
