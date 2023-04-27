@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tela_game{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgb(30, 114, 240), rgb(244, 246, 247));
+}
+
+.mario{
+    position: absolute;
+    bottom: 0px;/*52*/
+    
+}
+.mario img{
+    width: 80px;
+}
+
+.cano{
+    position: absolute;
+    bottom: -5px;
+    animation: animacao_cano 1.5s linear infinite;
+    
+}
+.cano img{
+    width: 60px;
+}
+.nuvem{
+    position: absolute;
+    right: -390px;
+    margin-top: 50px;
+    animation: animacao_nuvem 10s linear infinite;
+}
+.pulo{
+    animation: pulo 500ms linear ;
+}
+.pontos{
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+}
+
+.pontos p{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    color: yellow;
+}
+.cont{
+    color: white;
+}
+.logo_mario{
+    position: absolute;
+    left: 20px;
+    margin-top: 5px;
+}
+.logo_mario img{
+    width: 80px;
+}
+.progresso{
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: yellow;
+    font-size: 30px;
+    margin: 100px;
+    
+    text-align: center;
+}
+.gameOver{
+    padding: 20px;
+    position:absolute;
+    width: 300px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 100px;
+    overflow: hidden;
+    background-image: url("./Black-Game-Over-PNG.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    display: none;
+}
+
+
+@keyframes animacao_cano{
+    from{
+        right: -60px;
+    }
+    to{
+        right: 500px;
+    }
+}
+
+@keyframes animacao_nuvem{
+    from{
+        right: -390px;
+    }
+    to{
+        right: 500px;
+    }
+}
+
+@keyframes pulo{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom: 90px;
+    }
+    70%{
+        bottom: 90px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px){
+
+} 
